@@ -4,6 +4,7 @@ import NavbarComponent from "@/components/navbar/NavbarComponent";
 import Loading from "./loading";
 import Error from "./error";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
+import { inter , suwannaphum } from "./font";
 
 export default function RootLayout({
 	children,
@@ -12,7 +13,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className="h-screen flex flex-col">
+			<body className={`${inter.variable} ${suwannaphum.variable}`}>
 				<header>
 					<NavbarComponent />
 				</header>
