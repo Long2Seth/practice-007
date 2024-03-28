@@ -4,7 +4,7 @@ import NavbarComponent from "@/components/navbar/NavbarComponent";
 import Loading from "./loading";
 import Error from "./error";
 import { ErrorBoundary } from "next/dist/client/components/error-boundary";
-import { inter , suwannaphum } from "./font";
+import { inter , localCustomFont, suwannaphum } from "./font";
 
 export default function RootLayout({
 	children,
@@ -13,7 +13,7 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={`${inter.variable} ${suwannaphum.variable}`}>
+			<body className={`${inter.variable} ${suwannaphum.variable} ${localCustomFont.variable}`}>
 				<header>
 					<NavbarComponent />
 				</header>
